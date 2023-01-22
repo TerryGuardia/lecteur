@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.open_lib {
+  margin-left: 85%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.container {
+
+  border: black solid 2px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(rgba(96, 192, 80, 1), rgba(21, 22, 21, 1));
+  padding: 20px;
+}
+
+.lecteur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.stop {
+  margin-right: 30px;
+}
+
+.couverture {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #fffafa;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0px 6px 5px black;
+}
+.titre_musique {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.artiste {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.slider_progression,
+.slider_volume,
+.slider,
+li,
+li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actuel,
+.total {
+  padding: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 32px;
+  color: #d96422;
+}
+ul {
+  margin-right: -15px;
+}
+li {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+li:first-of-type {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+li div > p {
+  margin-right: 50px;
+}
+.borderBottom {
+  border-bottom: black solid 2px;
+}
+
+.titre_musique,
+.fa-volume-xmark,
+.playpause {
+  color: white;
+}
+
+.artiste,
+.actuel,
+.total,
+.fa-step-backward,
+.fa-step-forward,
+.stop,
+.fa-volume-down,
+.fa-volume-up,
+li {
+  color: rgba(217, 217, 217, 1);
+}
+.fa-random,
+.fa-list,
+.fa-repeat {
+  color: rgba(217, 217, 217, 0.5);
+}
+.fa-step-backward:hover,
+.fa-step-forward:hover,
+.stop:hover,
+.fa-volume-down:hover,
+.fa-list,
+li:hover {
+  color: white;
+}
+.fa-random:hover,
+.fa-repeat:hover {
+  color: white;
+}
+i:hover,
+li:hover,
+.open_lib,
+input {
+  cursor: pointer;
+}
+.fa-volume-up:hover {
+  cursor: default !important;
+}
+.jsDNone {
+  display: none;
+}
+.jsWhite {
+  color: white !important;
+}
+
+#effet {
+  margin-top: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trait {
+  background: #f1f1f1;
+  width: 15px;
+  border-radius: 50px;
+  margin: 0 3px;
+}
+.jsEnLecture {
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 50%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 50%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+.trait:nth-of-type(1) {
+  animation-delay: 0.6s;
+  opacity: 0.25;
+  height: 40%;
+}
+.trait:nth-of-type(2) {
+  animation-delay: 0.8s;
+  opacity: 0.5;
+  height: 60%;
+}
+.trait:nth-of-type(3) {
+  animation-delay: 1s;
+  opacity: 0.75;
+  height: 80%;
+}
+.trait:nth-of-type(4) {
+  animation-delay: 1.2s;
+  opacity: 1;
+  height: 100%;
+}
+.trait:nth-of-type(5) {
+  animation-delay: 0s;
+  opacity: 0.75;
+  height: 80%;
+}
+.trait:nth-of-type(6) {
+  animation-delay: 0.2s;
+  opacity: 0.5;
+  height: 60%;
+}
+.trait:nth-of-type(7) {
+  animation-delay: 0.4s;
+  opacity: 0.25;
+  height: 40%;
+}
+.jsMusicActuel {
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+  .slider_progression input {
+    width: 200px;
+  }
+  .slider_volume input {
+    width: 100px;
+    margin: 0 10px;
+  }
+  .library {
+    margin-top: 50px;
+  }
+  .titre_musique {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .artiste {
+    margin-top: 5px;
+    font-size: 1.5rem;
+  }
+  .fa-step-backward,
+.fa-step-forward,
+.fa-stop {
+  font-size: 2.5em !important;
+}
+.fa-volume-down,
+.fa-volume-up,
+.fa-volume-xmark {
+  font-size: 1.5em !important;
+}
+
+.fa-play,
+.fa-pause {
+  font-size: 4em !important;
+}
+.fa-random,
+.fa-repeat {
+  font-size: 2.5em !important;
+}
+.container {
+  padding: 10px;
+}
+li div > p {
+  font-size: 17px;
+}
+.library ul {
+  margin-right: 0;
+}
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 999px) {
+  .container {
+    flex-direction: column;
+  }
+  .slider_progression input {
+    width: 250px;
+  }
+  
+  .slider_volume input {
+    width: 150px;
+    margin: 0 10px;
+  }
+  .library {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider_progression input {
+    width: 250px;
+  }
+  
+  .slider_volume input {
+    width: 150px;
+    margin: 0 10px;
+  }
+
+  .library {
+    margin-left: 100px;
+  }
+}
