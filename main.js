@@ -87,7 +87,7 @@ function chargeMusique(musiqueChoisi) {
 function play() {
   lecteur.play();
   lectureEnCours = true;
-  btnPlayPause.innerHTML = '<i class="fa fa-pause fa-5x"></i>';
+  btnPlayPause.innerHTML = '<i class="fa fa-pause fa-5x" title="Pause"></i>';
   effet.forEach((element) => {
     element.classList.add("jsEnLecture");
   });
@@ -100,7 +100,7 @@ function play() {
 function pause() {
   lecteur.pause();
   lectureEnCours = false;
-  btnPlayPause.innerHTML = '<i class="fa fa-play fa-5x"></i>';
+  btnPlayPause.innerHTML = '<i class="fa fa-play fa-5x" title="Play"></i>';
   effet.forEach((element) => {
     element.classList.remove("jsEnLecture");
   });
