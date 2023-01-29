@@ -10,11 +10,15 @@ body {
   align-items: center;
 }
 .open_lib {
-  margin-left: 85%;
   font-size: 28px;
   font-weight: bold;
 }
 
+.themeListe{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .container {
 
   border: black solid 2px;
@@ -89,9 +93,7 @@ h2 {
   font-size: 32px;
   color: #d96422;
 }
-ul {
-  margin-right: -15px;
-}
+
 li {
   width: 100%;
   height: 65px;
@@ -120,24 +122,29 @@ li div > p {
 .artiste,
 .actuel,
 .total,
-.fa-step-backward,
-.fa-step-forward,
-.stop,
-.fa-volume-down,
-.fa-volume-up,
+
+
 li {
   color: rgba(217, 217, 217, 1);
 }
 .fa-random,
 .fa-list,
+.stop,
+.fa-step-backward,
+.fa-step-forward,
 .fa-repeat {
-  color: rgba(217, 217, 217, 0.5);
+  color: rgba(0, 0, 0, 0.6);
+}
+.fa-volume-down,
+.fa-volume-up{
+  color: rgba(0, 0, 0, 0.8);
 }
 .fa-step-backward:hover,
 .fa-step-forward:hover,
 .stop:hover,
 .fa-volume-down:hover,
 .fa-list,
+.fa-palette,
 li:hover {
   color: white;
 }

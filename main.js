@@ -1,6 +1,9 @@
+let aleaColor = document.querySelector(".aleaColor");
+let gradient = document.querySelector(".container");
 let open_lib = document.querySelector(".open_lib");
 let library = document.querySelector(".library");
 let musique = document.querySelectorAll(".borderBottom");
+let all = document.querySelectorAll("i");
 
 let image = document.querySelector(".couverture");
 let titre = document.querySelector(".titre_musique");
@@ -61,6 +64,23 @@ let updateTimer;
 lecteur.volume = sliderVolume.value / 100;
 
 chargeMusique(musiqueChoisi);
+
+aleaColor.addEventListener("click", function () {
+  let aleaHexColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  let aleaHexColor2 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  // for (let i = 0; i < all.length; i++) {
+  //   all[i].style.color = aleaHexColor;
+  // }
+  // for (let i = 0; i < effet.length; i++) {
+  //   effet[i].style.backgroundColor = aleaHexColor;
+  // }
+
+  while (aleaHexColor === aleaHexColor2) {
+    aleaHexColor2 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  }
+  gradient.style.background = `linear-gradient(${aleaHexColor}, ${aleaHexColor2})`;
+});
+
 // Fait apparaître ou disparaître la liste des musiques.
 open_lib.addEventListener("click", () => {
   library.classList.toggle("jsDNone");
