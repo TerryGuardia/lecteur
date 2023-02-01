@@ -25,7 +25,7 @@ body {
   border-radius: 20px;
   box-shadow: 0px 5px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(rgba(96, 192, 80, 1), rgba(21, 22, 21, 1));
-  padding: 20px;
+  padding: 15px;
 }
 
 .lecteur {
@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .stop {
@@ -53,8 +53,8 @@ body {
 
 .couverture {
   margin: 25px;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   border: 2px solid #fffafa;
   background-size: cover;
   background-position: center;
@@ -62,7 +62,7 @@ body {
   box-shadow: 0px 6px 5px black;
 }
 .titre_musique {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -121,10 +121,7 @@ li div > p {
 
 .artiste,
 .actuel,
-.total,
-
-
-li {
+.total {
   color: rgba(217, 217, 217, 1);
 }
 .fa-random,
@@ -136,6 +133,7 @@ li {
   color: rgba(0, 0, 0, 0.6);
 }
 .fa-volume-down,
+li,
 .fa-volume-up{
   color: rgba(0, 0, 0, 0.8);
 }
